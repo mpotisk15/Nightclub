@@ -9,6 +9,8 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Button x:Name="blagajna" Content="Blagajna" Margin="0,310,0,0" VerticalAlignment="Top" Height="125" Width="400" HorizontalAlignment="Center" FontSize="48" Click="blagajna_Click"/>
+        <Button x:Name="rezervacija" Content="Rezervacije" Height="125" Width="400" HorizontalAlignment="Center" FontSize="48"/>
+        <Button x:Name="skladiste" Content="Skladište" Margin="0,650,0,0" VerticalAlignment="Top" Height="125" Width="400" RenderTransformOrigin="0.485,1.639" HorizontalAlignment="Center" FontSize="48"/>
     </Grid>
 </Page>
