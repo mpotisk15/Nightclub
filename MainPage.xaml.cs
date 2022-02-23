@@ -26,12 +26,5 @@ namespace Nightclub
         {
             InitializeComponent();
         }
-
-        private void blagajna_Click(object sender, RoutedEventArgs e)
-        {
-            BlankPage1 infowindow = new BlankPage1();
-
-            infowindow.Show();
-        }
     }
 }
