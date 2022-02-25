@@ -9,6 +9,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <NavigationView x:Name="navView2" IsSettingsVisible="False" IsBackEnabled="True" Loaded="NavigationViewL" SelectionChanged="NavigationViewSC">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Icon="Home" Content="Početna" Tag="Home"/>
+            </NavigationView.MenuItems>
 
+            <ScrollViewer>
+                <Frame x:Name="CFrame" />
+            </ScrollViewer>
+        </NavigationView>
     </Grid>
 </Page>

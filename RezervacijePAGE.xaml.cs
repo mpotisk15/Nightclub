@@ -26,5 +26,20 @@ namespace Nightclub
         {
             this.InitializeComponent();
         }
+        private void NavigationViewL(object sender, RoutedEventArgs e)
+        {
+            CFrame.Navigate(typeof(BlagajnaMenuPAGE));
+        }
+        private void NavigationViewSC(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
+        {
+            NavigationViewItem item = args.SelectedItem as NavigationViewItem;
+
+            switch (item.Tag.ToString())
+            {
+                case "Home":
+                    CFrame.Navigate(typeof(BlagajnaMenuPAGE));
+                    break;
+            }
+        }
     }
 }
