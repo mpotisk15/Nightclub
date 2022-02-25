@@ -26,5 +26,20 @@ namespace Nightclub
         {
             InitializeComponent();
         }
+
+        private void blagajna_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(typeof(BlagajnaPAGE));
+        }
+
+        private void rezervacije_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(typeof(RezervacijePAGE));
+        }
+
+        private void skladiste_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(typeof(SkladistePAGE));
+        }
     }
 }
