@@ -18,5 +18,8 @@
         <Frame x:Name="frame" HorizontalAlignment="Left" VerticalAlignment="Top" Width="1318" Height="660" Margin="350,85,0,0" />
         <Button x:Name="Login" Content="LogIn" Margin="1695,10,0,0" VerticalAlignment="Top" Height="63" Width="173"  FontSize="30" Foreground="White"/>
         <Button x:Name="Signup" Content="SignUp" Margin="1495,10,0,0" VerticalAlignment="Top" Height="63" Width="173"  FontSize="30" Foreground="White"/>
+        
+
+
     </Grid>
 </Page>
