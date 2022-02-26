@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="Nightclub.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Nightclub"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBox x:Name="imeprez" HorizontalAlignment="Left" Margin="408,500,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="52" Width="238"/>
+        <PasswordBox x:Name="password" HorizontalAlignment="Left" Margin="408,624,0,0"  VerticalAlignment="Top" Height="46" Width="238"/>
+        <Button x:Name="submit" Content="SUBMIT" Margin="496,728,0,0" VerticalAlignment="Top" Click="submit_Click"/>
+        <TextBlock x:Name="povratna" HorizontalAlignment="Left" Margin="970,526,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="83" Width="216"/>
+
+    </Grid>
+</Page>

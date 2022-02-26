@@ -29,17 +29,17 @@ namespace Nightclub
 
         private void blagajna_Click(object sender, RoutedEventArgs e)
         {
-            frame.Navigate(typeof(BlagajnaPAGE));
+            Frame.Navigate(typeof(BlagajnaPAGE));
         }
 
         private void rezervacije_Click(object sender, RoutedEventArgs e)
         {
-            frame.Navigate(typeof(RezervacijePAGE));
+            Frame.Navigate(typeof(RezervacijePAGE));
         }
 
         private void skladiste_Click(object sender, RoutedEventArgs e)
         {
-            frame.Navigate(typeof(SkladistePAGE));
+            Frame.Navigate(typeof(SkladistePAGE));
         }
     }
 }
