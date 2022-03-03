@@ -15,7 +15,9 @@
             </NavigationView.MenuItems>
 
             <ScrollViewer>
-                <Frame x:Name="CFrame" />
+                <Frame x:Name="CFrame" >
+                    <Image Height="1076" Width="799" Source="/Assets/rezervacije.png"/>
+                </Frame>
             </ScrollViewer>
         </NavigationView>
     </Grid>
