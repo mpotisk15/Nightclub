@@ -6,13 +6,27 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="White">
 
     <Grid>
+<<<<<<< HEAD
         <TextBox x:Name="imeprez" HorizontalAlignment="Left" Margin="408,500,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="52" Width="238"/>
         <PasswordBox x:Name="password" HorizontalAlignment="Left" Margin="408,624,0,0"  VerticalAlignment="Top" Height="46" Width="238"/>
         <Button x:Name="submit" Content="SUBMIT" Margin="496,728,0,0" VerticalAlignment="Top" Click="submit_Click"/>
         <TextBlock x:Name="povratna" HorizontalAlignment="Left" Margin="970,526,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="83" Width="216"/>
+        <Image Source="Assets/ClubLogo.png" HorizontalAlignment="Left" Height="459" Margin="777,349,0,0" VerticalAlignment="Top" Width="441"/>
+=======
+        <TextBox x:Name="imeprez" HorizontalAlignment="Center" Margin="0,334,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="42" Width="310" FontSize="20" FontFamily="Cooper Black" FontStyle="Italic" TextAlignment="Center"/>
+        <PasswordBox x:Name="password" HorizontalAlignment="Center" Margin="0,406,0,0"  VerticalAlignment="Top" Height="42" Width="310" FontSize="16"/>
+        <Button x:Name="submit" Content="SUBMIT" Margin="0,472,0,0" VerticalAlignment="Top" Click="submit_Click" HorizontalAlignment="Center" Height="43" Width="141" FontFamily="Cooper Black" FontSize="18" Foreground="Black" BorderBrush="Black"/>
+        <TextBlock x:Name="povratna" HorizontalAlignment="Left" Margin="1154,371,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="83" Width="216"/>
+        <Image HorizontalAlignment="Left" Grid.Row="0" Height="272" Margin="824,57,0,0" VerticalAlignment="Top" Width="466" Source="/Assets/ClubLogo.png"/>
+        <Button x:Name="submit_Copy" Content="U don't have an account" Margin="0,540,0,0" VerticalAlignment="Top"  HorizontalAlignment="Center" Height="31" Width="273" FontFamily="Cooper Black" FontSize="18" Foreground="Black" BorderBrush="White" FocusVisualPrimaryBrush="White">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+>>>>>>> 911009c5efbf1858674701fb840116b883779e3a
 
     </Grid>
 </Page>

@@ -27,19 +27,23 @@ namespace Nightclub
             InitializeComponent();
         }
 
+<<<<<<< Updated upstream
         private void blagajna_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(BlagajnaPAGE));
+            this.Frame.Navigate(typeof(BlagajnaPAGE));
         }
 
         private void rezervacije_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(RezervacijePAGE));
+            this.Frame.Navigate(typeof(RezervacijePAGE));
         }
 
         private void skladiste_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(SkladistePAGE));
+            this.Frame.Navigate(typeof(SkladistePAGE));
         }
+=======
+        
+>>>>>>> Stashed changes
     }
 }

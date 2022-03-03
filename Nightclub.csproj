@@ -147,6 +147,7 @@
   <ItemGroup>
     <Content Include="Assets\pozadina aplikacije.jpg" />
     <Content Include="Assets\ClubLogo.png" />
+    <Content Include="Assets\rezervacije.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
