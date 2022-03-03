@@ -13,7 +13,7 @@
             <ImageBrush ImageSource="Assets/pozadina aplikacije.jpg"></ImageBrush>
         </Grid.Background>
         <Button x:Name="blagajna" Content="Blagajna" Margin="0,310,0,0" VerticalAlignment="Top" Height="125" Width="400" HorizontalAlignment="Center" FontSize="48" Foreground="White" Click="blagajna_Click" CornerRadius="10" />
-        <Button x:Name="rezervacije" Content="Rezervacije" Height="125" Width="400" HorizontalAlignment="Center" FontSize="48" Foreground="White" Margin="0,494,0,0" VerticalAlignment="Top" Click="rezervacije_Click" CornerRadius="10"/>
+        <Button x:Name="rezervacija" Content="Rezervacije" Height="125" Width="400" HorizontalAlignment="Center" FontSize="48" Foreground="White" Margin="0,494,0,0" VerticalAlignment="Top" Click="rezervacije_Click" CornerRadius="10"/>
         <Button x:Name="skladiste" Content="Skladište" Margin="0,682,0,0" VerticalAlignment="Top" Height="125" Width="400" RenderTransformOrigin="0.485,1.639" HorizontalAlignment="Center" FontSize="48" Foreground="White" Click="skladiste_Click" CornerRadius="10"/>
         
 

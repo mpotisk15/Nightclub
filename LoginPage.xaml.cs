@@ -29,7 +29,7 @@ namespace Nightclub
 
         private void submit_Click(object sender, RoutedEventArgs e)
         {
-            if(imeprez.Text=="cuckojekralj" && password.Password=="admin")
+            if(imeprez.Text=="admin" && password.Password=="admin")
             {
                 this.Frame.Navigate(typeof(MainPage));
             }
