@@ -16,7 +16,7 @@
 
             <ScrollViewer>
                 <Frame x:Name="CFrame" >
-                    <Image Height="1076" Width="799" Source="/Assets/rezervacije.png"/>
+                    <Image Height="917" Width="565" Source="/Assets/rezervacije.png" Stretch="Uniform"/>
                 </Frame>
             </ScrollViewer>
         </NavigationView>

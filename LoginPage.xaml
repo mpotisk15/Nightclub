@@ -13,7 +13,7 @@
         <PasswordBox x:Name="password" HorizontalAlignment="Center" Margin="0,420,0,0"  VerticalAlignment="Top" Height="46" Width="310"/>
         <Button x:Name="submit" Content="SUBMIT" Margin="0,494,0,0" VerticalAlignment="Top" Click="submit_Click" HorizontalAlignment="Center" Height="41" Width="109" FontFamily="Cooper Black" FontSize="18" Foreground="Black" BorderBrush="Black"/>
         <TextBlock x:Name="povratna" HorizontalAlignment="Left" Margin="1154,371,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="83" Width="216"/>
-        <Image HorizontalAlignment="Left" Height="272" Margin="824,118,0,0" VerticalAlignment="Top" Width="466" Source="/Assets/ClubLogo.png"/>
+        <Image HorizontalAlignment="Left" Grid.Row="0" Height="272" Margin="824,118,0,0" VerticalAlignment="Top" Width="466" Source="/Assets/ClubLogo.png"/>
 
     </Grid>
 </Page>
