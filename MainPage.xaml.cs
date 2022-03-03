@@ -27,7 +27,7 @@ namespace Nightclub
             InitializeComponent();
         }
 
-<<<<<<< Updated upstream
+
         private void blagajna_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(BlagajnaPAGE));
@@ -42,8 +42,6 @@ namespace Nightclub
         {
             this.Frame.Navigate(typeof(SkladistePAGE));
         }
-=======
-        
->>>>>>> Stashed changes
+
     }
 }

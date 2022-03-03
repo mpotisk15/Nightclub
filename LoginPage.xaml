@@ -9,14 +9,11 @@
     Background="White">
 
     <Grid>
-        <Grid.Background>
-            <AcrylicBrush TintColor="#CC97B8E0"/>
-        </Grid.Background>
-        <TextBox x:Name="imeprez" FontSize="40px" TextAlignment="center" BorderBrush="#FF9133C9" BorderThickness="6" HorizontalAlignment="Left" Margin="480,402,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="95" Width="374" Background="WhiteSmoke" SelectionHighlightColor="#FF9133C9"/>
-        <PasswordBox x:Name="password" FontSize="40px" BorderBrush="#FF9133C9" BorderThickness="6" HorizontalAlignment="Left" Margin="480,571,0,0"  VerticalAlignment="Top" Height="95" Width="374" Background="Whitesmoke" SelectionHighlightColor="#FF9133C9"/>
-        <Button x:Name="submit" BorderBrush="#FF9133C9" BorderThickness="4" FontSize="30px" Content="SUBMIT" Margin="540,796,0,0" VerticalAlignment="Top" Click="submit_Click" Height="62" Width="254" Background="#331E37D6"/>
+        <TextBox x:Name="imeprez" FontSize="40px" TextAlignment="center"  BorderThickness="2" HorizontalAlignment="Center" Margin="0,407,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="436" Background="#FFE8E8E8" SelectionHighlightColor="White" BorderBrush="#66FFFFFF" FocusVisualPrimaryBrush="White"/>
+        <PasswordBox x:Name="password" FontSize="40px"  BorderThickness="2" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="57" Width="437" Background="#FFE8E8E8" SelectionHighlightColor="White" BorderBrush="#66FFFFFF"/>
+        <Button x:Name="submit"  BorderThickness="1" FontSize="30px" Content="SUBMIT" Margin="0,615,0,0" VerticalAlignment="Top" Click="submit_Click" Height="62" Width="254" Background="#33FFFFFF" HorizontalAlignment="Center" BorderBrush="White" FocusVisualPrimaryBrush="#FF131380"/>
         <TextBlock x:Name="povratna"  FontSize="20px" HorizontalAlignment="Left" Margin="480,700,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="309"/>
-        <Image Source="Assets/ClubLogo.png" HorizontalAlignment="Left" Height="510" Margin="960,0,0,0" VerticalAlignment="Center" Width="565"/>
+        <Image Source="Assets/ClubLogo.png" HorizontalAlignment="Left" Height="510" Margin="705,-108,0,0" VerticalAlignment="Top" Width="565"/>
 
     </Grid>
 </Page>

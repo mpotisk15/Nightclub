@@ -19,11 +19,8 @@
 
 
 
-=======
-        <Button x:Name="blagajna" Content="Blagajna" Margin="0,310,0,0" VerticalAlignment="Top" Height="125" Width="400" HorizontalAlignment="Center" FontSize="48" Foreground="White" Click="blagajna_Click"/>
-        <Button x:Name="rezervacije" Content="Rezervacije" Height="125" Width="400" HorizontalAlignment="Center" FontSize="48" Foreground="White" Margin="0,494,0,0" VerticalAlignment="Top" Click="rezervacije_Click"/>
-        <Button x:Name="skladiste" Content="Skladište" Margin="0,682,0,0" VerticalAlignment="Top" Height="125" Width="400" RenderTransformOrigin="0.485,1.639" HorizontalAlignment="Center" FontSize="48" Foreground="White" Click="skladiste_Click"/>
-        <Frame x:Name="frame" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1312" Height="700" />
->>>>>>> Stashed changes
+
+        
+
     </Grid>
 </Page>
