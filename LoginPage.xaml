@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="White">
 
     <Grid>
         <TextBox x:Name="imeprez" HorizontalAlignment="Center" Margin="0,334,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="52" Width="310" FontSize="20" FontFamily="Cooper Black" FontStyle="Italic"/>
