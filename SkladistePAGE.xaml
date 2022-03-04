@@ -9,6 +9,16 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Border BorderThickness="1" BorderBrush="#FFFFE5E5" HorizontalAlignment="Center" Height="161" VerticalAlignment="Top" Width="1500" FocusVisualSecondaryBrush="#FFFFE5E5" Background="#FFCDABFF">
+            <TextBlock Text="SKLADIŠTE" TextWrapping="Wrap" FontSize="120px" TextAlignment="Center"/>
+        </Border>
+        <StackPanel x:Name="panel_back1" Margin="30,51,1726,6" Orientation="Vertical">
+            <Button x:Name="button_back1" Height="59" Width="82" CornerRadius="25" BorderBrush="Black" Background="#FFE6AEAE" Click="button_back_Click1">
+                <StackPanel>
+                    <Image Source="Assets/back.png" Height="50" Width="50" RenderTransformOrigin="0.5,0.535"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
 
     </Grid>
 </Page>

@@ -145,6 +145,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\back.png" />
     <Content Include="Assets\pozadina aplikacije.jpg" />
     <Content Include="Assets\ClubLogo.png" />
     <Content Include="Assets\rezervacije.png" />
