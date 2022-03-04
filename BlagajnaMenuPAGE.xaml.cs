@@ -26,5 +26,14 @@ namespace Nightclub
         {
             this.InitializeComponent();
         }
+        private void OnPointEnter(object sender, PointerRoutedEventArgs e)
+        {
+            VisualStateManager.GoToState(this, "VisualStateNormal", false);
+        }
+
+        private void OnPointExit(object sender, PointerRoutedEventArgs e)
+        {
+            VisualStateManager.GoToState(this, "VisualStateAnimate", false);
+        }
     }
 }
