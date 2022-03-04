@@ -20,18 +20,17 @@ namespace Nightclub
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class BlagajnaPAGE : Page
+    public sealed partial class BlagajnaMP : Page
     {
-        public BlagajnaPAGE()
+        public BlagajnaMP()
         {
             this.InitializeComponent();
         }
-
         private void NavigationView_Loaded(object sender, RoutedEventArgs e)
         {
             CFrame.Navigate(typeof(BlagajnaMenuPAGE));
         }
-        private void NavigationView_SelectionChanged(NavigationView sender,NavigationViewSelectionChangedEventArgs args)
+        private void NavigationView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {
             NavigationViewItem item = args.SelectedItem as NavigationViewItem;
 
@@ -41,7 +40,7 @@ namespace Nightclub
                     CFrame.Navigate(typeof(BlagajnaMenuPAGE));
                     break;
             }
-    }
+        }
 
         private void navView_BackRequested(NavigationView sender, NavigationViewBackRequestedEventArgs args)
         {

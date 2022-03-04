@@ -122,6 +122,9 @@
     <Compile Include="BlagajnaMenuPAGE.xaml.cs">
       <DependentUpon>BlagajnaMenuPAGE.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BlagajnaMP.xaml.cs">
+      <DependentUpon>BlagajnaMP.xaml</DependentUpon>
+    </Compile>
     <Compile Include="BlagajnaPAGE.xaml.cs">
       <DependentUpon>BlagajnaPAGE.xaml</DependentUpon>
     </Compile>
@@ -147,6 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\back.png" />
+    <Content Include="Assets\lol.png" />
     <Content Include="Assets\pozadina aplikacije.jpg" />
     <Content Include="Assets\ClubLogo.png" />
     <Content Include="Assets\rezervacije.png" />
@@ -165,6 +169,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="BlagajnaMenuPAGE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlagajnaMP.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
