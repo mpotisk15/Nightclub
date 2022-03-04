@@ -1,0 +1,92 @@
+﻿<Page
+    x:Class="Nightclub.BlAGAJNAIZRADA"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Nightclub"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Black">
+
+    <Grid>
+        <Button x:Name="b1" Content="Drinks" Margin="0,308,0,0" VerticalAlignment="Top" Height="84" Width="239" FontSize="25" FontFamily="Segoe UI Black" FontWeight="Bold" Foreground="White" FocusVisualPrimaryBrush="#FFEE1B1B" PointerEntered="b1_PointerEntered" HorizontalAlignment="Center">
+
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFC74141" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Dark">
+                            <LinearGradientBrush x:Key="ButtonForegroundPointerOver" EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop  Color="Black"/>
+                                <GradientStop  Color="#FFC74141" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ResourceDictionary>
+                        <ResourceDictionary x:Key="Light">
+                            <LinearGradientBrush x:Key="ButtonForegroundPointerOver" EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop  Color="#FFC74141"/>
+                                <GradientStop  Color="black" Offset="1.9"/>
+                            </LinearGradientBrush>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button Content="Receipt" Margin="0,596,0,0" VerticalAlignment="Top" Height="84" Width="239" FontSize="25" FontFamily="Segoe UI Black" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFC74141" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Dark">
+                            <LinearGradientBrush x:Key="ButtonForegroundPointerOver" EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop  Color="Black"/>
+                                <GradientStop  Color="#FFC74141" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ResourceDictionary>
+                        <ResourceDictionary x:Key="Light">
+                            <LinearGradientBrush x:Key="ButtonForegroundPointerOver" EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop  Color="#FFC74141"/>
+                                <GradientStop  Color="black" Offset="1.9"/>
+                            </LinearGradientBrush>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button Content="Bottles" Margin="0,438,0,0" VerticalAlignment="Top" Height="84" Width="239" FontSize="25" FontFamily="Segoe UI Black" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFC74141" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Dark">
+                            <LinearGradientBrush x:Key="ButtonForegroundPointerOver" EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop  Color="Black"/>
+                                <GradientStop  Color="#FFC74141" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ResourceDictionary>
+                        <ResourceDictionary x:Key="Light">
+                            <LinearGradientBrush x:Key="ButtonForegroundPointerOver" EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop  Color="#FFC74141"/>
+                                <GradientStop  Color="black" Offset="1.9"/>
+                            </LinearGradientBrush>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Page>

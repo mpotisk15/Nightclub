@@ -6,9 +6,20 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="Black">
 
     <Grid>
+        <Button Content="1" Margin="498,256,0,0" VerticalAlignment="Top" Height="84" Width="239" FontSize="25" FontFamily="Segoe UI Black" FontWeight="Bold" Foreground="White" FocusVisualPrimaryBrush="#FFEE1B1B"/>
+        <Button Content="2"/>
+        <Button Content="3"/>
+        <Button Content="4"/>
+        <Button Content="5"/>
+        <Button Content="6"/>
+        <Button Content="7"/>
+        <Button Content="8"/>
+        <Button Content="9"/>
+        <Button Content="0"/>
+
 
     </Grid>
 </Page>
