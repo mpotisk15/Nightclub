@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Media;
+using Windows.UI;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -26,20 +28,12 @@ namespace Nightclub
         {
             this.InitializeComponent();
         }
-        private void NavigationViewL(object sender, RoutedEventArgs e)
-        {
-            CFrame.Navigate(typeof(BlagajnaMenuPAGE));
-        }
-        private void NavigationViewSC(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
-        {
-            NavigationViewItem item = args.SelectedItem as NavigationViewItem;
 
-            switch (item.Tag.ToString())
-            {
-                case "Home":
-                    CFrame.Navigate(typeof(BlagajnaMenuPAGE));
-                    break;
-            }
+        private void elipsa1_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        {
+            SolidColorBrush abc = new SolidColorBrush();
+            abc.Color = Color.FromArgb((byte)255, (byte)0, (byte)0, (byte)1);
+            elipsa1.Fill = abc;
         }
     }
 }
