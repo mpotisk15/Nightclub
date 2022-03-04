@@ -25,6 +25,7 @@ namespace Nightclub
         public SkladistePAGE()
         {
             this.InitializeComponent();
+            pica.ItemsSource = Skladiste_baza.GetRecords();
         }
 
         private void button_back_Click1(object sender, RoutedEventArgs e)

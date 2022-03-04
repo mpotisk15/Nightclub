@@ -135,6 +135,7 @@
     <Compile Include="RezervacijePAGE.xaml.cs">
       <DependentUpon>RezervacijePAGE.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Skladiste-baza.cs" />
     <Compile Include="SkladistePAGE.xaml.cs">
       <DependentUpon>SkladistePAGE.xaml</DependentUpon>
     </Compile>
