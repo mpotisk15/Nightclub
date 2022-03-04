@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="Nightclub.BlagajnaPAGE"
+    x:Class="Nightclub.BlagajnaMP"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Nightclub"
@@ -14,7 +14,11 @@
                 <ImageBrush/>
             </NavigationView.BorderBrush>
             <NavigationView.MenuItems>
-                <NavigationViewItem Icon="Home" Content="Početna" Tag="Home" />
+                <NavigationViewItem  Content="Početna" Tag="Home" >
+                    <NavigationViewItem.Icon>
+                        <BitmapIcon UriSource="Asses"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
                 <NavigationViewItem  Content="Početna" Tag="Home" />
             </NavigationView.MenuItems>
 
@@ -22,6 +26,5 @@
                 <Frame x:Name="CFrame" />
             </ScrollViewer>
         </NavigationView>
-
     </Grid>
 </Page>
