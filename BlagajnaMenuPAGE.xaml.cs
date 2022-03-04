@@ -27,9 +27,6 @@ namespace Nightclub
             this.InitializeComponent();
         }
 
-        private void b1_PointerEntered(object sender, PointerRoutedEventArgs e)
-        {
-           
-        }
+        
     }
 }

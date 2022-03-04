@@ -42,5 +42,10 @@ namespace Nightclub
                     break;
             }
     }
-}
+
+        private void navView_BackRequested(NavigationView sender, NavigationViewBackRequestedEventArgs args)
+        {
+            this.Frame.Navigate(typeof(MainPage));
+        }
+    }
 }
