@@ -9,16 +9,17 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Border BorderThickness="1" BorderBrush="#FFFFE5E5" HorizontalAlignment="Center" Height="161" VerticalAlignment="Top" Width="1500" FocusVisualSecondaryBrush="#FFFFE5E5" Background="#FFCDABFF">
-            <TextBlock Text="SKLADIŠTE" TextWrapping="Wrap" FontSize="120px" TextAlignment="Center"/>
-        </Border>
-        <StackPanel x:Name="panel_back1" Margin="30,51,1726,6" Orientation="Vertical">
-            <Button x:Name="button_back1" Height="59" Width="82" CornerRadius="25" BorderBrush="Black" Background="#FFE6AEAE" Click="button_back_Click1">
-                <StackPanel>
-                    <Image Source="Assets/back.png" Height="50" Width="50" RenderTransformOrigin="0.5,0.535"/>
-                </StackPanel>
-            </Button>
-        </StackPanel>
+        <Border BorderThickness="1" BorderBrush="Black" Margin="0,0,0,860" Background="#FFC290FF"/>
+        <TextBlock Text="SKLADIŠTE" TextWrapping="Wrap" FontSize="120px" TextAlignment="Center" Margin="587,0,637,892" FocusVisualSecondaryBrush="#99FFFFFF" SelectionHighlightColor="White"/>
+        <Button x:Name="button_back1" Height="112" Width="159" CornerRadius="25" BorderBrush="Black" Background="#FFC290FF" Click="button_back_Click1" Margin="52,922,0,0" VerticalAlignment="Top">
+            <StackPanel>
+                <Image Source="Assets/back.png" Height="50" Width="50" RenderTransformOrigin="0.5,0.535"/>
+            </StackPanel>
+        </Button>
+        <TextBlock FontSize="100px" HorizontalAlignment="Left" Margin="174,277,0,0" Text="POPIS PIĆA" TextWrapping="Wrap" VerticalAlignment="Top" Height="137" Width="559"/>
+        <TextBox  FontSize="50px" HorizontalAlignment="Left" Margin="174,449,0,0" Text="IME PIĆA" TextWrapping="Wrap" VerticalAlignment="Top" Height="91" Width="504" Background="#FFE1D0F5" FontWeight="Normal"/>
+        <TextBox  FontSize="50px" HorizontalAlignment="Left" Margin="174,588,0,0" Text="ŠIFRA PIĆA" TextWrapping="Wrap" VerticalAlignment="Top" Height="91" Width="504" Background="#FFE1D0F5" FontWeight="Normal"/>
+        <TextBox  FontSize="50px" HorizontalAlignment="Left" Margin="174,723,0,0" Text="KOLIČINA" TextWrapping="Wrap" VerticalAlignment="Top" Height="91" Width="504" Background="#FFE1D0F5" FontWeight="Normal"/>
 
     </Grid>
 </Page>

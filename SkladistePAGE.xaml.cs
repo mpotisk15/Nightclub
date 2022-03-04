@@ -26,5 +26,10 @@ namespace Nightclub
         {
             this.InitializeComponent();
         }
+
+        private void button_back_Click1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
+        }
     }
 }
