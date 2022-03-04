@@ -14,12 +14,13 @@
                 <ImageBrush/>
             </NavigationView.BorderBrush>
             <NavigationView.MenuItems>
-                <NavigationViewItem  Content="Početna" Tag="Home" >
+                <NavigationViewItem  Content="Početna" >
                     <NavigationViewItem.Icon>
-                        <BitmapIcon UriSource="Asses"/>
+                        <BitmapIcon UriSource="Assets/"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem  Content="Početna" Tag="Home" />
+
+
             </NavigationView.MenuItems>
 
             <ScrollViewer>

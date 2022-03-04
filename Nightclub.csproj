@@ -149,7 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\back.png" />
-    <Content Include="Assets\icons8-cocktail-90.png" />
+    <Content Include="Assets\lol.png" />
     <Content Include="Assets\pozadina aplikacije.jpg" />
     <Content Include="Assets\ClubLogo.png" />
     <Content Include="Assets\rezervacije.png" />
