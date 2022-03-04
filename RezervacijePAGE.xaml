@@ -9,16 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <NavigationView x:Name="navView2" IsSettingsVisible="False" IsBackEnabled="True" Loaded="NavigationViewL" SelectionChanged="NavigationViewSC">
-            <NavigationView.MenuItems>
-                <NavigationViewItem Icon="Home" Content="Početna" Tag="Home"/>
-            </NavigationView.MenuItems>
-
-            <ScrollViewer>
-                <Frame x:Name="CFrame" >
-                    <Image Height="917" Width="565" Source="/Assets/rezervacije.png" Stretch="Uniform"/>
-                </Frame>
-            </ScrollViewer>
-        </NavigationView>
+        <Image Source="/Assets/rezervacije.png" Stretch="Uniform" Margin="0,0,0,0"/>
+        <Ellipse x:Name="elipsa1" HorizontalAlignment="Left" Height="42" Margin="792,897,0,0" Stroke="Black" VerticalAlignment="Top" Width="48" FocusVisualPrimaryBrush="Black" Fill="#FF00FF2E" DoubleTapped="elipsa1_DoubleTapped"/>
     </Grid>
 </Page>
