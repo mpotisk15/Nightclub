@@ -8,8 +8,25 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <Image Source="/Assets/rezervacije.png" Stretch="Uniform" Margin="0,0,0,0"/>
-        <Ellipse x:Name="elipsa1" Height="45" Margin="594,826,861,129" Stroke="Black" Width="45" FocusVisualPrimaryBrush="Black" Fill="#FF00FF2E" DoubleTapped="elipsa1_DoubleTapped"/>
-    </Grid>
+    <Viewbox Stretch="Uniform" StretchDirection="Both">
+        <Grid Width="786" Height="898">
+                <Grid.Background>
+                    <ImageBrush ImageSource="/Assets/rezervacije.png"/>
+                </Grid.Background>
+            <Ellipse x:Name="elipsa2" Margin="241,746,503,118" Stroke="Black" Width="42" Fill="Lime" DoubleTapped="elipsa2_DoubleTapped">
+                <FlyoutBase.AttachedFlyout>
+                    <Flyout>
+                        <Button x:Name="gumb_rezerviraj" Content="Rezerviraj" Background="Black"/>
+                    </Flyout>
+                </FlyoutBase.AttachedFlyout>
+            </Ellipse>
+            <Ellipse x:Name="elipsa2_Copy" Margin="362,748,382,116" Stroke="Black" Width="42" Fill="Lime" DoubleTapped="elipsa2_Copy_DoubleTapped">
+            <FlyoutBase.AttachedFlyout>
+                <Flyout>
+                    <Button x:Name="gumb_rezerviraj1" Content="Rezerviraj" Background="Black"/>
+                </Flyout>
+            </FlyoutBase.AttachedFlyout>
+            </Ellipse>
+        </Grid>
+    </Viewbox>
 </Page>

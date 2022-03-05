@@ -28,12 +28,20 @@ namespace Nightclub
         {
             this.InitializeComponent();
         }
-
-        private void elipsa1_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        private void elipsa2_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
         {
             SolidColorBrush abc = new SolidColorBrush();
-            abc.Color = Color.FromArgb((byte)255, (byte)0, (byte)0, (byte)1);
-            elipsa1.Fill = abc;
+            abc.Color = Color.FromArgb((byte)255, (byte)255, (byte)0, (byte)0);
+            elipsa2.Fill = abc;
+            FlyoutBase.ShowAttachedFlyout((FrameworkElement)sender);
+        }
+
+        private void elipsa2_Copy_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        {
+            SolidColorBrush abc = new SolidColorBrush();
+            abc.Color = Color.FromArgb((byte)255, (byte)255, (byte)0, (byte)0);
+            elipsa2_Copy.Fill = abc;
+            FlyoutBase.ShowAttachedFlyout((FrameworkElement)sender);
         }
     }
 }
