@@ -46,7 +46,8 @@ namespace Nightclub
 
                 case "Boce":
                     this.CFrame.Navigate(typeof(BOCE));
-
+                    break;
+                default:
                     break;
             }
         }
