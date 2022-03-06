@@ -30,18 +30,115 @@ namespace Nightclub
         }
         private void elipsa2_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
         {
-            SolidColorBrush abc = new SolidColorBrush();
-            abc.Color = Color.FromArgb((byte)255, (byte)255, (byte)0, (byte)0);
-            elipsa2.Fill = abc;
             FlyoutBase.ShowAttachedFlyout((FrameworkElement)sender);
         }
 
         private void elipsa2_Copy_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
         {
+            FlyoutBase.ShowAttachedFlyout((FrameworkElement)sender);
+        }
+        private void elipsa2_Copy1_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        {
+            FlyoutBase.ShowAttachedFlyout((FrameworkElement)sender);
+        }
+        private void elipsa2_Copy2_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        {
+            FlyoutBase.ShowAttachedFlyout((FrameworkElement)sender);
+        }
+        private void elipsa2_Copy3_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        {
+            FlyoutBase.ShowAttachedFlyout((FrameworkElement)sender);
+        }
+        private void elipsa2_Copy4_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        {
+            FlyoutBase.ShowAttachedFlyout((FrameworkElement)sender);
+        }
+        private void elipsa2_Copy5_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        {
+            FlyoutBase.ShowAttachedFlyout((FrameworkElement)sender);
+        }
+        private void elipsa2_Copy6_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        {
+            FlyoutBase.ShowAttachedFlyout((FrameworkElement)sender);
+        }
+        private void elipsa2_Copy7_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        {
+            FlyoutBase.ShowAttachedFlyout((FrameworkElement)sender);
+        }
+        private void elipsa2_Copy8_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        {
+            FlyoutBase.ShowAttachedFlyout((FrameworkElement)sender);
+        }
+        private void elipsa2_Copy9_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        {
+            FlyoutBase.ShowAttachedFlyout((FrameworkElement)sender);
+        }
+
+        private void gumb_rezerviraj_Click(object sender, RoutedEventArgs e)
+        {
+            SolidColorBrush abc = new SolidColorBrush();
+            abc.Color = Color.FromArgb((byte)255, (byte)255, (byte)0, (byte)0);
+            elipsa2.Fill = abc;
+        }
+        private void gumb_rezerviraj1_Click(object sender, RoutedEventArgs e)
+        {
             SolidColorBrush abc = new SolidColorBrush();
             abc.Color = Color.FromArgb((byte)255, (byte)255, (byte)0, (byte)0);
             elipsa2_Copy.Fill = abc;
-            FlyoutBase.ShowAttachedFlyout((FrameworkElement)sender);
+        }
+        private void gumb_rezerviraj2_Click(object sender, RoutedEventArgs e)
+        {
+            SolidColorBrush abc = new SolidColorBrush();
+            abc.Color = Color.FromArgb((byte)255, (byte)255, (byte)0, (byte)0);
+            elipsa2_Copy1.Fill = abc;
+        }
+        private void gumb_rezerviraj3_Click(object sender, RoutedEventArgs e)
+        {
+            SolidColorBrush abc = new SolidColorBrush();
+            abc.Color = Color.FromArgb((byte)255, (byte)255, (byte)0, (byte)0);
+            elipsa2_Copy2.Fill = abc;
+        }
+        private void gumb_rezerviraj4_Click(object sender, RoutedEventArgs e)
+        {
+            SolidColorBrush abc = new SolidColorBrush();
+            abc.Color = Color.FromArgb((byte)255, (byte)255, (byte)0, (byte)0);
+            elipsa2_Copy3.Fill = abc;
+        }
+        private void gumb_rezerviraj5_Click(object sender, RoutedEventArgs e)
+        {
+            SolidColorBrush abc = new SolidColorBrush();
+            abc.Color = Color.FromArgb((byte)255, (byte)255, (byte)0, (byte)0);
+            elipsa2_Copy4.Fill = abc;
+        }
+        private void gumb_rezerviraj6_Click(object sender, RoutedEventArgs e)
+        {
+            SolidColorBrush abc = new SolidColorBrush();
+            abc.Color = Color.FromArgb((byte)255, (byte)255, (byte)0, (byte)0);
+            elipsa2_Copy5.Fill = abc;
+        }
+        private void gumb_rezerviraj7_Click(object sender, RoutedEventArgs e)
+        {
+            SolidColorBrush abc = new SolidColorBrush();
+            abc.Color = Color.FromArgb((byte)255, (byte)255, (byte)0, (byte)0);
+            elipsa2_Copy6.Fill = abc;
+        }
+        private void gumb_rezerviraj8_Click(object sender, RoutedEventArgs e)
+        {
+            SolidColorBrush abc = new SolidColorBrush();
+            abc.Color = Color.FromArgb((byte)255, (byte)255, (byte)0, (byte)0);
+            elipsa2_Copy7.Fill = abc;
+        }
+        private void gumb_rezerviraj9_Click(object sender, RoutedEventArgs e)
+        {
+            SolidColorBrush abc = new SolidColorBrush();
+            abc.Color = Color.FromArgb((byte)255, (byte)255, (byte)0, (byte)0);
+            elipsa2_Copy8.Fill = abc;
+        }
+        private void gumb_rezerviraj10_Click(object sender, RoutedEventArgs e)
+        {
+            SolidColorBrush abc = new SolidColorBrush();
+            abc.Color = Color.FromArgb((byte)255, (byte)255, (byte)0, (byte)0);
+            elipsa2_Copy9.Fill = abc;
         }
     }
 }
