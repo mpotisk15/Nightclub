@@ -26,5 +26,12 @@ namespace Nightclub
         {
             this.InitializeComponent();
         }
+
+        private void d_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+       
     }
 }
