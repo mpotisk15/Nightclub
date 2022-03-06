@@ -6,42 +6,12 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="Black">
-
-    <Grid>
-        <NavigationView x:Name="navView"  IsSettingsVisible="False" BackRequested="navView_BackRequested" IsBackEnabled="True" Loaded="NavigationView_Loaded" SelectionChanged="NavigationView_SelectionChanged" FocusVisualPrimaryBrush="Black" Foreground="Black" FocusVisualSecondaryBrush="#99FFFFFF" Background="Black">
-            <NavigationView.BorderBrush>
-                <ImageBrush/>
-            </NavigationView.BorderBrush>
-            <NavigationView.MenuItems>
-                <NavigationViewItem x:Name="Pića"  Content="Pića" >
-                    <NavigationViewItem.Icon>
-                        <BitmapIcon UriSource="Assets/lol.png"/>
-                    </NavigationViewItem.Icon>
-                </NavigationViewItem>
-                <NavigationViewItem x:Name="Boce" Content="Boce" >
-                    <NavigationViewItem.Icon>
-                        <BitmapIcon UriSource="Assets/sampanjac.png"/>
-                    </NavigationViewItem.Icon>
-                </NavigationViewItem>
-                <NavigationViewItem x:Name="Račun" Content="Račun" >
-                    <NavigationViewItem.Icon>
-                        <BitmapIcon UriSource="Assets/receipt.png"/>
-                    </NavigationViewItem.Icon>
-                </NavigationViewItem>
-                
-                    
+    Background="White">
+    <Border BorderThickness="1" BorderBrush="#FFFF2BF5" Margin="0,0,0,894" Background="#FFA73EFF"/>
+       
+    
+    
+    
 
 
-                </NavigationView.MenuItems>
-
-            <ScrollViewer>
-                <Frame x:Name="CFrame" />
-            </ScrollViewer>
-        </NavigationView>
-
-
-
-        
-    </Grid>
 </Page>

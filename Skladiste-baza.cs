@@ -36,91 +36,83 @@ namespace Nightclub
             }
         }
 
-
-        public static void addRecord(string Name, Int64 ID, Int64 Neto)
+        public static void dodavanjePica(String userName, Int64 userID, Int64 userNeto)
         {
-            if (!Name.Equals("") && !ID.Equals("") && !Neto.Equals("") )
+            String nazivBaze = "userData.db";
+            if (!userName.Equals("") && !userID.Equals("") && !userNeto.Equals(""))
             {
-                string pathToDB = Path.Combine(ApplicationData.Current.LocalFolder.Path, "userData.db");
-
-                using (SqliteConnection con = new SqliteConnection($"Filename={pathToDB}"))
+                String putDoBaze = Path.Combine(ApplicationData.Current.LocalFolder.Path, nazivBaze);
+                using (SqliteConnection con = new SqliteConnection($"Filename={putDoBaze}"))
                 {
                     con.Open();
-                    SqliteCommand CMD_Insert = new SqliteCommand();
-                    CMD_Insert.Connection = con;
+                    SqliteCommand naredba_insert = new SqliteCommand();
+                    naredba_insert.Connection = con; //konekcija naredbe se nalazi u varijabli con
 
-                    CMD_Insert.CommandText = "INSERT INTO Tablica VALUES(@userName,@userID, @userNeto);";
-                    //CMD_Insert.CommandText = "DROP TABLE Tablica";
-                    CMD_Insert.Parameters.AddWithValue("@userName", Name);
-                    CMD_Insert.Parameters.AddWithValue("@userID", ID);
-                    CMD_Insert.Parameters.AddWithValue("@userNeto", Neto);
-
-                    CMD_Insert.ExecuteReader();
+                    naredba_insert.CommandText = "INSERT INTO Tablica(userName, userID, userNeto) VALUES(@userName, @userID, @userNeto);";
+                    naredba_insert.Parameters.AddWithValue("@userName", userName);
+                    naredba_insert.Parameters.AddWithValue("@userID", userID);
+                    naredba_insert.Parameters.AddWithValue("@userNeto", userNeto);
 
                     con.Close();
-
-
                 }
             }
         }
 
-        public class userDetails
+        public class detaljiSkladista
         {
-            private string v1;
-            private string v2;
+            public String userName { get; set; }
+            public Int64 userID { get; set; }
+            public Int64 userNeto { get; set; }
 
-            public String Name { get; set; }
-            public int ID { get; set; }
-            public int Neto { get; set; }
-            public userDetails(string userName, int userID, int userNeto)
+
+            public detaljiSkladista(String userName, Int64 userID, Int64 userNeto)
             {
-                Name = userName;
-                ID = userID;
-                Neto = userNeto;
+                this.userName = userName;
+                this.userID = userID;
+                this.userNeto = userNeto;
             }
 
-            public userDetails(string v1, string v2)
-            {
-                this.v1 = v1;
-                this.v2 = v2;
-            }
         }
-        public static List<userDetails> GetRecords()
-        {
-            List<userDetails> userList = new List<userDetails>();
-            string pathToDB = Path.Combine(ApplicationData.Current.LocalFolder.Path, "userData.db");
 
-            using (SqliteConnection con = new SqliteConnection($"Filename={pathToDB}"))
-            {
-                con.Open();
-
-                string selectCmd = "SELECT * FROM Tablica";
-                SqliteCommand cmd_getRec = new SqliteCommand(selectCmd, con);
-
-                SqliteDataReader reader = cmd_getRec.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    userList.Add(new userDetails(reader.GetString(0), reader.GetString(1)));
-                }
-
-                con.Close();
-            }
-            return userList;
-        }
         public static void izbrisi()
         {
-            String baza = "userData.db";
-            String pathToDB = Path.Combine(ApplicationData.Current.LocalFolder.Path, baza);
+            String nazivBaze = "userData.db";
+            String pathToDB = Path.Combine(ApplicationData.Current.LocalFolder.Path, nazivBaze);
 
             using (SqliteConnection con = new SqliteConnection($"Filename={pathToDB}"))
             {
                 con.Open();
-                String delete = "DELETE FROM Tablica";
-                SqliteCommand cmd_getAllRec = new SqliteCommand(delete, con);
+                String naredba_delete = "DELETE FROM Tablica";
+                SqliteCommand cmd_getAllRec = new SqliteCommand(naredba_delete, con);
                 SqliteDataReader reader = cmd_getAllRec.ExecuteReader();
                 con.Close();
             }
         }
+
+        public static List<detaljiSkladista> DohvatSvihPodataka()
+        {
+            String nazivBaze = "userData.db";
+
+            List<detaljiSkladista> skladisteList = new List<detaljiSkladista>();
+            String pathToDB = Path.Combine(ApplicationData.Current.LocalFolder.Path, nazivBaze);
+            using (SqliteConnection con = new SqliteConnection($"Filename={pathToDB}"))
+            {
+                con.Open();
+                String naredba_select = "SELECT * FROM Tablica";
+                SqliteCommand cmd_getAllRec = new SqliteCommand(naredba_select, con);
+
+                SqliteDataReader reader = cmd_getAllRec.ExecuteReader();
+
+                while (reader.Read()) //dok je moguce citati iz baze cita
+                {
+                    skladisteList.Add(new detaljiSkladista(reader.GetString(0), reader.GetInt64(1), reader.GetInt64(2)));
+                }
+
+                con.Close();
+            }
+            return skladisteList;
+        }
+
+
     }
 }
