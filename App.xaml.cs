@@ -30,6 +30,7 @@ namespace Nightclub
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            Skladiste_baza.InitializeDB();
         }
 
         /// <summary>
