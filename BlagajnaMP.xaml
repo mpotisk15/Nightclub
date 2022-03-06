@@ -27,5 +27,9 @@
                 <Frame x:Name="CFrame" />
             </ScrollViewer>
         </NavigationView>
+
+
+
+        
     </Grid>
 </Page>

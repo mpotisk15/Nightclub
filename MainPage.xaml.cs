@@ -30,7 +30,7 @@ namespace Nightclub
 
         private void blagajna_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(BlagajnaPAGE));
+            this.Frame.Navigate(typeof(BlagajnaMP));
         }
 
         private void rezervacije_Click(object sender, RoutedEventArgs e)

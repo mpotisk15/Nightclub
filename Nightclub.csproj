@@ -119,14 +119,11 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BlagajnaMenuPAGE.xaml.cs">
-      <DependentUpon>BlagajnaMenuPAGE.xaml</DependentUpon>
-    </Compile>
     <Compile Include="BlagajnaMP.xaml.cs">
       <DependentUpon>BlagajnaMP.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BlagajnaPAGE.xaml.cs">
-      <DependentUpon>BlagajnaPAGE.xaml</DependentUpon>
+    <Compile Include="BrojStola.xaml.cs">
+      <DependentUpon>BrojStola.xaml</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
@@ -169,15 +166,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="BlagajnaMenuPAGE.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="BlagajnaMP.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="BlagajnaPAGE.xaml">
+    <Page Include="BrojStola.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -28,7 +28,7 @@ namespace Nightclub
         }
         private void NavigationView_Loaded(object sender, RoutedEventArgs e)
         {
-            CFrame.Navigate(typeof(BlagajnaMenuPAGE));
+            CFrame.Navigate(typeof(BlagajnaMP));
         }
         private void NavigationView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {
@@ -37,7 +37,7 @@ namespace Nightclub
             switch (item.Tag.ToString())
             {
                 case "Home":
-                    CFrame.Navigate(typeof(BlagajnaMenuPAGE));
+                    CFrame.Navigate(typeof(BlagajnaMP));
                     break;
             }
         }
