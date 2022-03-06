@@ -135,6 +135,9 @@
     <Compile Include="RezervacijePAGE.xaml.cs">
       <DependentUpon>RezervacijePAGE.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RezervacijeRESET.xaml.cs">
+      <DependentUpon>RezervacijeRESET.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Skladiste-baza.cs" />
     <Compile Include="SkladistePAGE.xaml.cs">
       <DependentUpon>SkladistePAGE.xaml</DependentUpon>
@@ -185,6 +188,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="RezervacijePAGE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RezervacijeRESET.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
