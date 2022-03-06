@@ -6,7 +6,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="Gray">
+
 
     <Viewbox Stretch="Uniform" StretchDirection="Both">
         <Grid Width="786" Height="898">
@@ -90,7 +91,8 @@
                     </Flyout>
                 </FlyoutBase.AttachedFlyout>
             </Ellipse>
-            
+            <Button x:Name="povratak" Content="Povratak" Height="90" Width="287" FontSize="48" Foreground="White" Margin="-350,35,0,0" VerticalAlignment="Top" CornerRadius="10" Click="povratak_Click"/>
+
         </Grid>
     </Viewbox>
 </Page>
