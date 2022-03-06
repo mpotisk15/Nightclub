@@ -122,6 +122,9 @@
     <Compile Include="BlagajnaMP.xaml.cs">
       <DependentUpon>BlagajnaMP.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BOCE.xaml.cs">
+      <DependentUpon>BOCE.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Drinks.xaml.cs">
       <DependentUpon>Drinks.xaml</DependentUpon>
     </Compile>
@@ -172,6 +175,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="BlagajnaMP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BOCE.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
