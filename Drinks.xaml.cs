@@ -20,16 +20,11 @@ namespace Nightclub
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class BrojStola : Page
+    public sealed partial class Drinks : Page
     {
-        public BrojStola()
+        public Drinks()
         {
             this.InitializeComponent();
-        }
-
-        private void submit_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(MainPage));
         }
     }
 }

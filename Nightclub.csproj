@@ -122,8 +122,8 @@
     <Compile Include="BlagajnaMP.xaml.cs">
       <DependentUpon>BlagajnaMP.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BrojStola.xaml.cs">
-      <DependentUpon>BrojStola.xaml</DependentUpon>
+    <Compile Include="Drinks.xaml.cs">
+      <DependentUpon>Drinks.xaml</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
@@ -151,7 +151,9 @@
     <Content Include="Assets\lol.png" />
     <Content Include="Assets\pozadina aplikacije.jpg" />
     <Content Include="Assets\ClubLogo.png" />
+    <Content Include="Assets\receipt.png" />
     <Content Include="Assets\rezervacije.png" />
+    <Content Include="Assets\sampanjac.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -170,7 +172,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="BrojStola.xaml">
+    <Page Include="Drinks.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
