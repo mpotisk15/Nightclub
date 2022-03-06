@@ -35,7 +35,7 @@ namespace Nightclub
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Skladiste_baza.dodavanjeKlijenta(ime.Text, Convert.ToInt64(sifra.Text), Convert.ToInt64(kolicina.Text));
+            Skladiste_baza.dodavanjePica(ime.Text, Convert.ToInt64(sifra.Text), Convert.ToInt64(kolicina.Text));
             pica.ItemsSource = Skladiste_baza.DohvatSvihPodataka();
         }
     }

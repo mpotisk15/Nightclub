@@ -40,7 +40,7 @@ namespace Nightclub
             }
         }
 
-        public static void dodavanjeKlijenta(String userName, Int64 userID, Int64 userNeto)
+        public static void dodavanjePica(String userName, Int64 userID, Int64 userNeto)
         {
             String nazivBaze = "skladiste.db";
             if (!userID.Equals("") && !userName.Equals("") && !userNeto.Equals(""))
