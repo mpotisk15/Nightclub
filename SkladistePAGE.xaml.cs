@@ -25,7 +25,6 @@ namespace Nightclub
         public SkladistePAGE()
         {
             this.InitializeComponent();
-            Skladiste_baza.izbrisi();
             pica.ItemsSource = Skladiste_baza.DohvatSvihPodataka();
         }
 
@@ -36,8 +35,7 @@ namespace Nightclub
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Skladiste_baza.izbrisi();
-            Skladiste_baza.dodavanjePica("SvojeIme", 10, 10);
+            Skladiste_baza.dodavanjeKlijenta(ime.Text, Convert.ToInt64(sifra.Text), Convert.ToInt64(kolicina.Text));
             pica.ItemsSource = Skladiste_baza.DohvatSvihPodataka();
         }
     }
