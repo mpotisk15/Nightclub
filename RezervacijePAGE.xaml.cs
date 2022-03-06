@@ -73,7 +73,6 @@ namespace Nightclub
         {
             FlyoutBase.ShowAttachedFlyout((FrameworkElement)sender);
         }
-
         private void gumb_rezerviraj_Click(object sender, RoutedEventArgs e)
         {
             SolidColorBrush abc = new SolidColorBrush();
