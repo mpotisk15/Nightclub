@@ -8,9 +8,20 @@
     x:Class="Nightclub.Drinks"
     mc:Ignorable="d"
     Background="Black">
+    <Page.Resources>
+        <Style x:Key="Pice" TargetType="Custom:DataGridRow">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Custom:DataGridRow">
+                        <Grid/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
 
     <Grid>
-        <Button x:Name="Save" Content="Save" Height="97" Width="245" Margin="1630,938,0,0" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FFF9070C" Foreground="White" FontSize="30" FontFamily="Century Schoolbook">
+        <Button x:Name="Save" Content="Pay" Height="97" Width="245" Margin="1630,938,0,0" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FFF9070C" Foreground="White" FontSize="30" FontFamily="Century Schoolbook">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -32,6 +43,29 @@
                 </ResourceDictionary>
             </Button.Resources>
         </Button>
+        <Button x:Name="JD05" Content="Jack Daniels 0,5" Height="97" Width="262" Margin="97,49,0,0" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FFF9070C" Foreground="White" FontSize="30" FontFamily="Century Schoolbook" Click="JD05_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFF90707" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Dark">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#b30000"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="black"/>
+                        </ResourceDictionary>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#b30000"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Custom:DataGrid RowStyle="{StaticResource Pice}" HorizontalAlignment="Left" Height="745" Margin="1184,98,0,0" VerticalAlignment="Top" Width="691"/>
 
 
     </Grid>

@@ -26,7 +26,7 @@ namespace Nightclub
         {
             this.InitializeComponent();
             Skladiste_baza.izbrisi();
-            pica.ItemsSource = Skladiste_baza.GetRecords();
+            pica.ItemsSource = Skladiste_baza.DohvatSvihPodataka();
         }
 
         private void button_back_Click1(object sender, RoutedEventArgs e)
@@ -37,8 +37,8 @@ namespace Nightclub
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Skladiste_baza.izbrisi();
-            Skladiste_baza.addRecord(ime.Text, Convert.ToInt64(sifra.Text), Convert.ToInt64 (kolicina.Text));
-            pica.ItemsSource = Skladiste_baza.GetRecords();
+            Skladiste_baza.dodavanjePica("SvojeIme", 10, 10);
+            pica.ItemsSource = Skladiste_baza.DohvatSvihPodataka();
         }
     }
 }
