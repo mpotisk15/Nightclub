@@ -10,22 +10,29 @@
     Background="Black">
 
     <Grid>
-        <Button x:Name="Save" Content="Save" Height="97" Width="245" Margin="1665,973,0,0" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FFF9070C" Foreground="White" FontSize="30" FontFamily="Century Schoolbook">
+        <Button x:Name="Save" Content="Save" Height="97" Width="245" Margin="1630,938,0,0" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FFF9070C" Foreground="White" FontSize="30" FontFamily="Century Schoolbook">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
                     <GradientStop Color="#FFF90707" Offset="1"/>
                 </LinearGradientBrush>
             </Button.Background>
+            <Button.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Dark">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#b30000"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="black"/>
+                        </ResourceDictionary>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#b30000"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+                </ResourceDictionary>
+            </Button.Resources>
         </Button>
-        <Button x:Name="d" Content="Drink" Height="97" Width="245" Margin="715,378,0,0" VerticalAlignment="Top" FocusVisualPrimaryBrush="#FFF9070C" Foreground="White" FontSize="30" FontFamily="Century Schoolbook" Click="d_Click">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black"/>
-                    <GradientStop Color="#FFF90707" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
+
 
     </Grid>
 </Page>
