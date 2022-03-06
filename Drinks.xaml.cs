@@ -27,11 +27,14 @@ namespace Nightclub
             this.InitializeComponent();
         }
 
-        private void d_Click(object sender, RoutedEventArgs e)
+        
+
+        
+
+        private void JD05_Click(object sender, RoutedEventArgs e)
         {
-
+            double price = 40;
+  
         }
-
-       
     }
 }
