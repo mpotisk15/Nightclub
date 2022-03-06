@@ -9,6 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Viewbox Stretch="Uniform" StretchDirection="Both">
+        
         <Grid Width="786" Height="898">
             <Grid.Background>
                 <ImageBrush ImageSource="/Assets/layout.png"/>
@@ -90,7 +91,9 @@
                     </Flyout>
                 </FlyoutBase.AttachedFlyout>
             </Ellipse>
-            
+           
         </Grid>
+        
     </Viewbox>
+    
 </Page>
