@@ -1,10 +1,11 @@
-﻿using Microsoft.Data.Sqlite;
-using System;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Data.Sqlite;
 using Windows.Storage;
 
 namespace Nightclub
@@ -25,9 +26,9 @@ namespace Nightclub
             {
                 con.Open();
                 String initCMD = "CREATE TABLE IF NOT EXISTS " +
-                                        "UserInfo (" +
+                                        "Tablica (" +
                                         "userName VARCHAR(50) PRIMARY KEY NOT NULL," +
-                                        "userID INT (50) NOT NULL" +
+                                        "userID INT (50) NOT NULL," +
                                         "userNeto INT (10) NOT NULL)";
                 SqliteCommand CMDcreateTable = new SqliteCommand(initCMD, con);
                 CMDcreateTable.ExecuteReader();
@@ -36,7 +37,7 @@ namespace Nightclub
         }
 
 
-        public static void addRecord(string Name, int ID, int Neto)
+        public static void addRecord(string Name, Int64 ID, Int64 Neto)
         {
             if (!Name.Equals("") && !ID.Equals("") && !Neto.Equals("") )
             {
@@ -48,7 +49,8 @@ namespace Nightclub
                     SqliteCommand CMD_Insert = new SqliteCommand();
                     CMD_Insert.Connection = con;
 
-                    CMD_Insert.CommandText = "INSERT INTO UserInfo VALUES(@userName,@userID, @userNeto);";
+                    CMD_Insert.CommandText = "INSERT INTO Tablica VALUES(@userName,@userID, @userNeto);";
+                    //CMD_Insert.CommandText = "DROP TABLE Tablica";
                     CMD_Insert.Parameters.AddWithValue("@userName", Name);
                     CMD_Insert.Parameters.AddWithValue("@userID", ID);
                     CMD_Insert.Parameters.AddWithValue("@userNeto", Neto);
@@ -70,10 +72,10 @@ namespace Nightclub
             public String Name { get; set; }
             public int ID { get; set; }
             public int Neto { get; set; }
-            public userDetails(string UserName, int UserID, int userNeto)
+            public userDetails(string userName, int userID, int userNeto)
             {
-                Name = UserName;
-                ID = UserID;
+                Name = userName;
+                ID = userID;
                 Neto = userNeto;
             }
 
@@ -92,7 +94,7 @@ namespace Nightclub
             {
                 con.Open();
 
-                String selectCmd = "SELECT * FROM UserInfo";
+                string selectCmd = "SELECT * FROM Tablica";
                 SqliteCommand cmd_getRec = new SqliteCommand(selectCmd, con);
 
                 SqliteDataReader reader = cmd_getRec.ExecuteReader();
@@ -105,6 +107,20 @@ namespace Nightclub
                 con.Close();
             }
             return userList;
+        }
+        public static void izbrisi()
+        {
+            String baza = "userData.db";
+            String pathToDB = Path.Combine(ApplicationData.Current.LocalFolder.Path, baza);
+
+            using (SqliteConnection con = new SqliteConnection($"Filename={pathToDB}"))
+            {
+                con.Open();
+                String delete = "DELETE FROM Tablica";
+                SqliteCommand cmd_getAllRec = new SqliteCommand(delete, con);
+                SqliteDataReader reader = cmd_getAllRec.ExecuteReader();
+                con.Close();
+            }
         }
     }
 }
