@@ -19,29 +19,33 @@ namespace Nightclub
 
         public async static void InitializeDB()
         {
-            await ApplicationData.Current.LocalFolder.CreateFileAsync("userData.db", CreationCollisionOption.OpenIfExists);
-            string pathToDB = Path.Combine(ApplicationData.Current.LocalFolder.Path, "userData.db");
-
-            using (SqliteConnection con = new SqliteConnection($"Filename={pathToDB}"))
+            //----------------------------------------------------------------KLIJENTI----------------------------------------------------------------
+            String nazivBaze = "skladiste.db";
+            await ApplicationData.Current.LocalFolder.CreateFileAsync(nazivBaze, CreationCollisionOption.OpenIfExists); //naziv baze, i funkcija koja ju otvara ako postoji
+            String putDoBaze = Path.Combine(ApplicationData.Current.LocalFolder.Path, nazivBaze); //funkcija koja trazi put do baze koja je drugi 
+            using (SqliteConnection con = new SqliteConnection($"Filename={putDoBaze}"))
             {
                 con.Open();
-                String initCMD = "CREATE TABLE IF NOT EXISTS " +
-                                        "Tablica (" +
-                                        "userName VARCHAR(50) PRIMARY KEY NOT NULL," +
-                                        "userID INT (50) NOT NULL," +
-                                        "userNeto INT (10) NOT NULL)";
-                SqliteCommand CMDcreateTable = new SqliteCommand(initCMD, con);
-                CMDcreateTable.ExecuteReader();
+                String pice = "CREATE TABLE IF NOT EXISTS " +
+                                         "Tablica (" +
+                                         "userName VARCHAR(25) PRIMARY KEY NOT NULL," +
+                                         "userID INT(10) NOT NULL," +
+                                         "userNeto INT(10) NOT NULL)";
+
+                SqliteCommand naredbaZaKreiranjePica = new SqliteCommand(pice, con);
+
+                naredbaZaKreiranjePica.ExecuteReader();
                 con.Close();
+
             }
         }
 
-        public static void dodavanjePica(String userName, Int64 userID, Int64 userNeto)
+        public static void dodavanjeKlijenta(String userName, Int64 userID, Int64 userNeto)
         {
-            String nazivBaze = "userData.db";
-            if (!userName.Equals("") && !userID.Equals("") && !userNeto.Equals(""))
+            String nazivBaze = "skladiste.db";
+            if (!userID.Equals("") && !userName.Equals("") && !userNeto.Equals(""))
             {
-                String putDoBaze = Path.Combine(ApplicationData.Current.LocalFolder.Path, nazivBaze);
+                string putDoBaze = Path.Combine(ApplicationData.Current.LocalFolder.Path, nazivBaze);
                 using (SqliteConnection con = new SqliteConnection($"Filename={putDoBaze}"))
                 {
                     con.Open();
@@ -53,30 +57,16 @@ namespace Nightclub
                     naredba_insert.Parameters.AddWithValue("@userID", userID);
                     naredba_insert.Parameters.AddWithValue("@userNeto", userNeto);
 
+
+                    naredba_insert.ExecuteReader();
                     con.Close();
                 }
             }
         }
 
-        public class detaljiSkladista
-        {
-            public String userName { get; set; }
-            public Int64 userID { get; set; }
-            public Int64 userNeto { get; set; }
-
-
-            public detaljiSkladista(String userName, Int64 userID, Int64 userNeto)
-            {
-                this.userName = userName;
-                this.userID = userID;
-                this.userNeto = userNeto;
-            }
-
-        }
-
         public static void izbrisi()
         {
-            String nazivBaze = "userData.db";
+            String nazivBaze = "skladiste.db";
             String pathToDB = Path.Combine(ApplicationData.Current.LocalFolder.Path, nazivBaze);
 
             using (SqliteConnection con = new SqliteConnection($"Filename={pathToDB}"))
@@ -89,11 +79,27 @@ namespace Nightclub
             }
         }
 
-        public static List<detaljiSkladista> DohvatSvihPodataka()
-        {
-            String nazivBaze = "userData.db";
 
-            List<detaljiSkladista> skladisteList = new List<detaljiSkladista>();
+        public class detaljiPica
+        {
+            public String userName { get; set; }
+            public Int64 userID { get; set; }
+            public Int64 userNeto { get; set; }
+
+            public detaljiPica(String userName, Int64 userID, Int64 userNeto)
+            {
+                this.userName = userName;
+                this.userID = userID;
+                this.userNeto = userNeto;
+            }
+
+        }
+
+        public static List<detaljiPica> DohvatSvihPodataka()
+        {
+            String nazivBaze = "skladiste.db";
+
+            List<detaljiPica> lista = new List<detaljiPica>();
             String pathToDB = Path.Combine(ApplicationData.Current.LocalFolder.Path, nazivBaze);
             using (SqliteConnection con = new SqliteConnection($"Filename={pathToDB}"))
             {
@@ -105,12 +111,12 @@ namespace Nightclub
 
                 while (reader.Read()) //dok je moguce citati iz baze cita
                 {
-                    skladisteList.Add(new detaljiSkladista(reader.GetString(0), reader.GetInt64(1), reader.GetInt64(2)));
+                    lista.Add(new detaljiPica(reader.GetString(0), reader.GetInt64(1), reader.GetInt64(2)));
                 }
 
                 con.Close();
             }
-            return skladisteList;
+            return lista;
         }
 
 

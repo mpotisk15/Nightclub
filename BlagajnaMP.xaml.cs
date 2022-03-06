@@ -28,7 +28,10 @@ namespace Nightclub
         }
         private void NavigationView_Loaded(object sender, RoutedEventArgs e)
         {
+
             this.CFrame.Navigate(typeof(Drinks));
+
+            
         }
         private void NavigationView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {
@@ -37,11 +40,13 @@ namespace Nightclub
             switch (item.Name.ToString())
             {
                 case "Piće":
+
                     this.CFrame.Navigate(typeof(Drinks));
                     break;
 
                 case "Boce":
                     this.CFrame.Navigate(typeof(BOCE));
+
                     break;
             }
         }
